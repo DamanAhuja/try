@@ -1,5 +1,4 @@
-import * as THREE from '/three.module.js';
-import {OrbitControls} from '/OrbitControls.js';
+import * as THREE from './three.module.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -24,7 +23,7 @@ camera.position.z = 5;
 function animate() {
 	requestAnimationFrame( animate );
 
-    plane.rotation.x += 0.01;
+        plane.rotation.x += 0.01;
 	plane.rotation.y += 0.01;
 	torus.rotation.x += 0.01;
 	torus.rotation.y += 0.01;
